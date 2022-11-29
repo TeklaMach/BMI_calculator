@@ -1,0 +1,127 @@
+<html lang="en" dir="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Calorie Calculator</title>
+</head>
+<body>
+	<div class="logo">
+	  <img src="img/logo.png" alt="logo" width="250">
+	</div>
+	<div class="container">
+	  <div class="main-wrapper">
+		<div class="bmi-heads">
+		  <div id="bmi-us-head" class="bmi-head active-head">
+			<h2>US Units</h2>
+		  </div>
+		  <div id="bmi-me-head" class="bmi-head">
+			<h2>Metric Units</h2>
+		  </div>
+		</div>
+		<div class="bmi-contents">
+		  <!-- us units -->
+		  <div class="bmi-content" id="bmi-us">
+			<form>
+			  <div class="form-group">
+				<p>Age</p>
+				<input type="text" class="form-control" placeholder="Age" id="age1">
+			  </div>
+			  <div class="form-group col-3">
+				<p>Gender</p>
+				<div class="gender">
+				  <input type="radio" name="gender" id="male" value="male">
+				  <label for="male">Male</label>
+				</div>
+				<div>
+				  <input type="radio" name="gender" id="female" value="female">
+				  <label for="female">Female</label>
+				</div>
+			  </div>
+			  <div class="form-group col-3">
+				<p>Height</p>
+				<input type="text" class="form-control" id="feet" placeholder="feet">
+				<input type="text" class="form-control inches" id="inches" placeholder="inches">
+			  </div>
+			  <div class="form-group">
+				<p>Weight</p>
+				<input type="text" class="form-control" id="pounds" placeholder="pounds">
+			  </div>
+			  <div class="form-group">
+				<select name="exercise" id="exercise">
+				  <option selected disabled>Choose Activity:</option>
+				  <option value="exercise1">Basal Metabolic Rate(BMR)</option>
+				  <option value="exercise2">Sedentary: little or no exercise</option>
+				  <option value="exercise3">Light: exercise i-3 times/week </option>
+				  <option value="exercise4">Moderate:exercise 4-5 times/week</option>
+				  <option value="exercise5">Active: daily exercise</option>
+				  <option value="exercise7">Very Active: intense exercise 6-7 times/week</option>
+				  <option value="exercise8">Extra Active: very intense exercise daily</option>
+				</select>
+			  </div>
+			</form>
+		  </div>
+		  <!-- metric units -->
+		  <div class="bmi-content" id="bmi-me">
+			<form>
+			  <div class="form-group">
+				<p>Age</p>
+				<input type="text" class="form-control" placeholder="Age" id="age2">
+			  </div>
+			  <div class="form-group col-3">
+				<p>Gender</p>
+				<div class="gender">
+				  <input type="radio" name="gender" id="male" value="male">
+				  <label for="male">Male</label>
+				</div>
+				<div>
+				  <input type="radio" name="gender" id="female" value="female">
+				  <label for="female">Female</label>
+				</div>
+			  </div>
+			  <div class="form-group">
+				<p>Height</p>
+				<input type="text" class="form-control" id="cm" placeholder="cm">
+			  </div>
+			  <div class="form-group">
+				<p>Weight</p>
+				<input type="text" class="form-control" id="kg" placeholder="kg">
+			  </div>
+			  <div class="form-group">
+				<select name="exercise" id="exercise">
+				  <option selected disabled>Choose Activity:</option>
+				  <option value="exercise1">Basal Metabolic Rate(BMR)</option>
+				  <option value="exercise2">Sedentary: little or no exercise</option>
+				  <option value="exercise3">Light: exercise i-3 times/week </option>
+				  <option value="exercise4">Moderate:exercise 4-5 times/week</option>
+				  <option value="exercise5">Active: daily exercise</option>
+				  <option value="exercise7">Very Active: intense exercise 6-7 times/week</option>
+				  <option value="exercise8">Extra Active: very intense exercise daily</option>
+				</select>
+			  </div>
+			</form>
+		  </div>
+		</div>
+		<div class="other">
+		  <p>want other calculations?<a href="other.html">Click Here</a></p>
+		</div>
+		<div class="btns">
+		  <button type="button" id="calc-btn" class="btn">Calculate</button>
+		  <button type="button" id="clr-btn" class="btn">Clear</button>
+		</div>
+		<div class="output">
+		  <span class="alert-error">Something went WRONG!</span>
+		  <div class="bmi-output">
+			<h3 id="bmi-value"></h3>
+			<p id="bmi-category"></p>
+			<p id="bmi-gender"></p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<script src="js/scrips.js"></script>
+</body>
+</html>
